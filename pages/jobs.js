@@ -1,8 +1,9 @@
+import React from "react";
 import Head from "next/head";
-import AuthenticatedLayout from "../layouts/AuthenticatedLayout";
 import MainLayout from "../layouts/MainLayout";
+import AuthenticatedLayout from "../layouts/AuthenticatedLayout";
 
-export default function Home() {
+const JobsPage = () => {
 	return (
 		<>
 			<Head>
@@ -11,8 +12,10 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<MainLayout>
-				<AuthenticatedLayout>Main Page</AuthenticatedLayout>
+				<AuthenticatedLayout>Jobs Page</AuthenticatedLayout>
 			</MainLayout>
 		</>
 	);
-}
+};
+
+export default JobsPage;
